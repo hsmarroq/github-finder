@@ -2,6 +2,7 @@ import { FaCodepen, FaStore, FaUserFriends, FaUsers } from 'react-icons/fa';
 import { useEffect, useContext } from 'react';
 import { Link } from 'react-router-dom';
 import Spinner from '../components/layout/Spinner';
+import RepoList from '../components/repos/RepoList';
 import { useParams } from 'react-router-dom';
 import GitHubContext from '../context/github/GitHubContext';
 
@@ -160,6 +161,8 @@ function User() {
             </div>
           </div>
         </div>
+
+        <RepoList />
       </div>
     </>
   );
